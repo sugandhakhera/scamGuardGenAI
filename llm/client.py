@@ -2,12 +2,12 @@ from google import genai
 from utils.config   import get_logger
 from dotenv import load_dotenv
 import os
+from google import genai
+from utils import get_logger
+from config import GEMINI_API_KEY,MAX_RETRIES,RETRY_DELAY,DEFAULT_MODEL
 
-load_dotenv()
+logger=get_logger(__name__)
 
-GEMINI_API_KEY = print(os.getenv("GEMINI_API_KEY"))
-
-logger = get_logger(__name__)
 
 
 class LLMClient:
