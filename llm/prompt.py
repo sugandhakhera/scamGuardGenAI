@@ -1,7 +1,7 @@
 # llm/prompts.py
 
 from pathlib import Path
-from utils.config import load_file
+from utils import load_file
 
 # Directory paths
 PROMPTS_DIR = Path(__file__).parent / "prompts"

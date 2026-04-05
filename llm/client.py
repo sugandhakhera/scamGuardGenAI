@@ -1,10 +1,11 @@
 from google import genai
-from utils.config   import get_logger
+from utils import get_logger
 from dotenv import load_dotenv
 import os
 from google import genai
 from utils import get_logger
 from config import GEMINI_API_KEY,MAX_RETRIES,RETRY_DELAY,DEFAULT_MODEL
+import time
 
 logger=get_logger(__name__)
 

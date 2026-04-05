@@ -1,13 +1,18 @@
 from typing import Optional
 from llm.client import LLMClient
 from utils import get_logger
+from config import DEFAULT_MODEL
 
 logger = get_logger(__name__)
+
 
 class LLMExecutor:
     """Executes prompts using the LLM client."""
     
     def __init__(self, model: Optional[str] = None) -> None:
+
+        logger.info("Model" , model)
+
         """
         Initialize the LLM executor.
         

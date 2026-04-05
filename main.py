@@ -2,7 +2,7 @@
 
 from pathlib import Path
 import sys
-from pipeline.scam_detector.detector import ScamDetector
+import pipeline.scam_detector.detector
 from utils import get_logger
 
 # Add project root to path
@@ -13,7 +13,7 @@ logger = get_logger(__name__)
 
 def main():
     """Test the scam detection system with dynamic message."""
-    detector = ScamDetector()
+    detector = pipeline.scam_detector.detector.ScamDetector()
     
     test_msg = str(input("Enter your Message: "))
     
